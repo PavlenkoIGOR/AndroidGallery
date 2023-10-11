@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AndroidGallery.Pages.RegPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Label x:Name="HeaderLabel"
+                   FontSize="Medium"
+                   Text="Введите 4-х значный PIN-код для регистации:"
+                   HorizontalOptions="Fill" 
+                   VerticalOptions="Center"
+                   Padding="20,0"/>
+            <Entry IsPassword="True" 
+                   x:Name="Password" 
+                   MaxLength="4"
+                   Margin ="20,0"
+                   TextColor="Black" 
+                   Placeholder="Сюда вводи"
+                   HorizontalOptions="Fill" 
+                   VerticalOptions="Center"
+                   TextChanged="PasswordChanging"/>
+            <Label x:Name="WarningMessageLabel"
+                   FontSize="Small"
+                   TextColor="Red"
+                   VerticalTextAlignment="Center" 
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Fill" 
+                   VerticalOptions="Center"
+                   Padding="20,0"/>
+            <Button x:Name="EnterButton" 
+                    IsEnabled="False"
+                    Text="Войти" 
+                    Clicked="WelcomeMethod"
+                    Margin="20,0"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
