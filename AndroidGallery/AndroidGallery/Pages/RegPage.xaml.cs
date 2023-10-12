@@ -16,7 +16,7 @@ namespace AndroidGallery.Pages
         public RegPage()
         {
             InitializeComponent();
-            _PinCode = Preferences.Get("Password", String.Empty); //Получает значение по указанному ключа.
+            _PinCode = Preferences.Get("Password", String.Empty); //Получает значение по указанному ключу.
             if (_PinCode != string.Empty)
             {
                 HeaderLabel.Text = "Введите 4-х значный PIN-код для регистации:";
